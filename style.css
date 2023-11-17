@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,600;6..12,700;6..12,800;6..12,900&display=swap');
+
+html {
+    font: 400 14px / 1 Nunito, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: max-content;
+    min-height: 100vh;
+    background-image: url('./bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+h1,
+h2,
+p,
+button {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+main h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+main>p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 60px;
+}
+
+main>div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 2500px;
+    margin: 0 auto;
+    gap: 30px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.card {
+    box-sizing: border-box;
+    padding: 30px;
+    width: calc(100% / 4 - 90px / 4);
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 2px solid #35cdef;
+    background-color: #fff;
+}
+
+.card article {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card article p {
+    width: 50px;
+    height: 50px;
+    background-color: #35cdef;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card article h2 {
+    color: #35cdef;
+    font-size: 1.8rem;
+}
+
+.card article div {
+    font-size: 1.1rem;
+    font-style: italic;
+    line-height: 1.8rem;
+    font-weight: 400;
+}
+
+.card button {
+    width: 40%;
+    min-width: max-content;
+    padding: 6px 20px;
+    border: 2px solid #35cdef;
+    color: #35cdef;
+    background-color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.card button:hover {
+    background-color: #35cdef;
+    color: #fff;
+}
+
+@media (min-width: 2560px) {
+    html {
+        font-size: 25px;
+    }
+
+    .card {
+        padding: 40px;
+    }
+
+    .card article {
+        gap: 40px;
+    }
+
+    .card article p {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (min-width: 1920px) and (max-width: 2560px) {
+    html {
+        font-size: 21px;
+    }
+
+    .card article {
+        gap: 30px;
+    }
+
+    .card article p {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 1920px) {
+    html {
+        font-size: 18px;
+    }
+
+    .card article {
+        gap: 30px;
+    }
+
+    .card article p {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+    html {
+        font-size: 14px;
+    }
+
+    .card {
+        width: calc(100% / 2 - 90px / 2);
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    html {
+        font-size: 13px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card button {
+        border: 1px solid #35cdef;
+    }
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size: 12px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card button {
+        border: 1px solid #35cdef;
+    }
+}
